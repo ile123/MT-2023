@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectRealtimeDatabaseAddSubjectActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="733dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/addSubjectYearRealtimeDatabase"
+            android:layout_width="260dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginBottom="75dp"
+            android:ems="10"
+            android:hint="Year..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectSubmitRealtimeDatabase"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/addSubjectRealtimeDatabaseTitle"
+            android:layout_width="260dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="16dp"
+            android:text="Add Subject"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addSubjectNameRealtimeDatabse"
+            android:layout_width="260dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addSubjectRealtimeDatabaseTitle" />
+
+        <EditText
+            android:id="@+id/addSubjectProfessorRealtimeDatabase"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginBottom="86dp"
+            android:ems="10"
+            android:hint="Professor..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectYearRealtimeDatabase"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/addSubjectSubmitRealtimeDatabase"
+            android:layout_width="269dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginBottom="71dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

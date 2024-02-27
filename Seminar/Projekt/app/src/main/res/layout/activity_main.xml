@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/questionmark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="736dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/quizTitle"
+            android:layout_width="228dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/quiz"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/playQuizButton"
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/play_quiz"
+            app:layout_constraintBottom_toTopOf="@+id/playerScoreButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/playerScoreButton"
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="23dp"
+            android:text="@string/your_score"
+            app:layout_constraintBottom_toTopOf="@+id/bestPlayersButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bestPlayersButton"
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/best_players"
+            app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="39dp"
+            android:text="@string/logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bestPlayersMaxScoreButton"
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginBottom="14dp"
+            android:text="Best Players Max Score"
+            app:layout_constraintBottom_toTopOf="@+id/playQuizButton"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

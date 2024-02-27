@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizResultActivity"
+    android:background="@drawable/questionmark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="726dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/resultTitle"
+            android:layout_width="152dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="129dp"
+            android:text="@string/result"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/celebrationGif"
+            android:layout_width="359dp"
+            android:layout_height="208dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/totalScoreResult"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:contentDescription="@string/victory_gif" />
+
+        <TextView
+            android:id="@+id/totalScoreResult"
+            android:layout_width="227dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="56dp"
+            android:text="@string/_0_10"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/goToMainButton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/goToMainButton"
+            android:layout_width="250dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginBottom="59dp"
+            android:text="@string/finish"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

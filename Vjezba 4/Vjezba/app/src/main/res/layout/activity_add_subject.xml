@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjectActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/addSubjectTitle"
+            android:layout_width="187dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="109dp"
+            android:layout_marginBottom="61dp"
+            android:text="Edit Subject"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/addSubjectProfessor"
+            android:layout_width="269dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="88dp"
+            android:ems="10"
+            android:hint="Professor"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectYear"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/addSubjectName"
+            android:layout_width="266dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="92dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectProfessor"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/addSubjectYear"
+            android:layout_width="271dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="84dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/addSubjectSubmit"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/addSubjectSubmit"
+            android:layout_width="235dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="124dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

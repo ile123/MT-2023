@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectRealtimeDatabaseEditSubjectActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="726dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/editSubjectRealtimeDatabaseTitle"
+            android:layout_width="237dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="13dp"
+            android:text="Edit Subject"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editSubjectNameRealtimeDatabase"
+            android:layout_width="237dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginBottom="43dp"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/editSubjectProfessorRealtimeDatabase"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editSubjectProfessorRealtimeDatabase"
+            android:layout_width="237dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:hint="Professor"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/editSubjectYearRealtimeDatabse"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editSubjectYearRealtimeDatabse"
+            android:layout_width="237dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginBottom="78dp"
+            android:ems="10"
+            android:hint="Year..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/editSubjectSubmitRealtimeDatabse"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/editSubjectSubmitRealtimeDatabse"
+            android:layout_width="243dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginBottom="51dp"
+            android:text="Edit"
+            app:layout_constraintBottom_toTopOf="@+id/editSubjectDeleteRealtimeDatabase"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/editSubjectDeleteRealtimeDatabase"
+            android:layout_width="243dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginBottom="58dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

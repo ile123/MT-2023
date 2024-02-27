@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:foregroundTint="#2196F3"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="112dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Country Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countryRegion"
+        android:layout_width="112dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:text="Country Region"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/countryName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countryCurrency"
+        android:layout_width="112dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:text="Country Currency"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/countryRegion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

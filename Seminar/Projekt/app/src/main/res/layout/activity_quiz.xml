@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@drawable/questionmark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="407dp"
+        android:layout_height="734dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="201dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/question"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/firstAnswerButton"
+            android:layout_width="155dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/first_answer"
+            app:layout_constraintBottom_toTopOf="@+id/thirdAnswerButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/secondAnswerButton"
+            android:layout_width="155dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/second_answer"
+            app:layout_constraintBottom_toTopOf="@+id/fourthAnswerButton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/thirdAnswerButton"
+            android:layout_width="155dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/thrid_answer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/fourthAnswerButton"
+            android:layout_width="155dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/fourth_answer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="336dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="248dp"
+            android:text="@string/text_question"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionNumber" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

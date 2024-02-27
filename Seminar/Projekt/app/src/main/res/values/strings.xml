@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Seminar</string>
+    <string name="submit">Submit</string>
+    <string name="do_not_have_an_account_click_here">Do not have an account? Click here.</string>
+    <string name="password">Password…</string>
+    <string name="email">Email....</string>
+    <string name="login">Login</string>
+    <string name="quiz">Quiz</string>
+    <string name="play_quiz">Play Quiz</string>
+    <string name="your_score">Your Score</string>
+    <string name="best_players">Best Players</string>
+    <string name="logout">Logout</string>
+    <string name="question">Question</string>
+    <string name="first_answer">First Answer</string>
+    <string name="second_answer">Second Answer</string>
+    <string name="thrid_answer">Thrid Answer</string>
+    <string name="fourth_answer">Fourth Answer</string>
+    <string name="text_question">Text Question</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="item_number">Item Number</string>
+    <string name="amount_of_correct_answers">Correct Answers: 0</string>
+    <string name="final_player_score">Total Score: 0</string>
+    <string name="number">Number</string>
+    <string name="total_score">Total Score</string>
+    <string name="player_scores">Player Scores</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="final_score">Final Score</string>
+    <string name="result">Result</string>
+    <string name="victory_gif">Victory GIF</string>
+    <string name="_0_10">0/10</string>
+    <string name="finish">Finish</string>
+</resources>
